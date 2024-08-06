@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container weather-container">
+        <div class="clock">
+            <p id="time"></p>
+        </div>
+        <div class="weather-top">
+            <h1 class="text-center">Weather in {{ weather.city }}</h1>
+            {% if weather.icon %}
+            <div class="text-center">
+                <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" alt="Weather icon" class="weather-icon">
+            </div>
+            {% endif %}
+
+            <h2 class="text-center temperature">{{ weather.temperature }}°{% if weather.unit == 'metric' %}C{% else %}F{% endif %}</h2>
+            <p class="text-center description">{{ weather.description }}</p>
+        </div>
+        <form method="GET" class="search-form">
+            <div class="input-group" style="width: 90%;">
+                <input type="text" name="city" class="form-control" placeholder="Enter City" value="{{ weather.city }}">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-success"style="margin-left: 10px;margin-top:0px;">Get Weather</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/weather.js' %}"></script>
+</body>
+</html>
