@@ -11,5 +11,7 @@ Search Functionality: Simply enter the name of any city to get its latest weathe
 Ensure you have the following installed:
 
 Python 3.x
+
 Django 3.x
+
 Pip (Python package installer)
