@@ -16,10 +16,11 @@ Django 3.x
 
 Pip (Python package installer)
 
-###  Home Page
+# Home Page
+
+![Description of the image](https://drive.google.com/uc?export=view&id=1NldfXJY2Lpjb2uOR4N7rZkzrdAIcRIFW)
+
+
+# Search Weather
 ![Description of the image](https://drive.google.com/uc?export=view&id=11FLywxvRYnb1BqwHqgLR3_klde6x1HPh)
-
-
-### Search Weather
-![Search Weather](https://drive.google.com/uc?export=view&id=1NldfXJY2Lpjb2uOR4N7rZkzrdAIcRIFW)
 
