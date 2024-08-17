@@ -22,5 +22,7 @@ Pip (Python package installer)
 
 
 # Search Weather
-![Description of the image](https://drive.google.com/file/d/1fU5zRgj6KionJEJIwowXNgF0oGQFuXOQ/view?usp=drive_link)
+
+![Description of the image](https://drive.google.com/uc?export=view&id=1fU5zRgj6KionJEJIwowXNgF0oGQFuXOQ)
+
 
